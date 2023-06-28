@@ -21,7 +21,7 @@ Doodl allows a user to:
 * View and like the doodles of other users.
 * Save doodles that they've created.
 * Search through doodles by name.
-* Remain auto logged in after sign-up/log-in.
+* Remain auto-logged in after sign-up/log-in.
 
 
 ### Built With ###
@@ -29,7 +29,7 @@ Doodl allows a user to:
 * [Backend](https://github.com/jinnic/doodleApp-backend): Ruby On Rails, PostgreSQL, JWT, Serializer
 
 ### Features ###
-* JWT Token Auth and auto login
+* JWT Token Auth and auto-login
 * Embedded canvas for drawing and showing
 * A fun and visually appealing custom design
 
