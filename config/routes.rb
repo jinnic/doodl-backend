@@ -4,6 +4,8 @@ Rails.application.routes.draw do
     resources :likes, only: [:index, :create]
   end
 
+  get "/search", to: "doodles#search"
+
   resources :users, only: [:create, :index, :update, :destroy, :show]
   post "/login", to: "auth#login"
   get "/auto_login", to: "auth#auto_login"

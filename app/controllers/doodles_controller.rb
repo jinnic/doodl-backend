@@ -1,5 +1,5 @@
 class DoodlesController < ApplicationController
-    skip_before_action :require_login, only: [:index]
+    # skip_before_action :require_login, only: [:index, :search]
 
     def index
         serialized_doodles = []
@@ -46,6 +46,24 @@ class DoodlesController < ApplicationController
         render json: doodle
     end
 
+    def search
+        serialized_doodles = []
+        doodles = Doodle.where("name LIKE ?", "%" + params[:q] + "%")
+            # "%" + params[:q] + "%")
+        if doodles 
+            doodles = doodles.paginate(page: page)
+            doodles.each do |dood|
+                serialized_doodles << DoodleSerializer.new(dood)
+            end
+            render json: {
+                doodles: serialized_doodles,
+                page: page,
+                total_pages: Doodle.pages
+            }
+        else 
+            render json: { error: "Not found"}, status: 404
+        end 
+    end
     private
 
     def doodle_params
