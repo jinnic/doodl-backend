@@ -33,6 +33,7 @@ Doodl allows a user to:
 * Embedded canvas for drawing and showing
 * A fun and visually appealing custom design
 
+
 ### Resources used ###
 * [Figma](https://www.figma.com/) - Creating mockups/prototypes for site layout and design
 * [Trello](https://trello.com/) - Manage project and track progress
