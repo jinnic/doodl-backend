@@ -6,21 +6,11 @@
   "scripts": {
     "postdeploy": "bundle exec rake db:migrate"
   },
-  "env": {
-    "RAILS_ENV": "production",
-    "RACK_ENV": "production",
-    "RAILS_SERVE_STATIC_FILES": "true"
-  },
-  "environments": {
-    
+  "formation": {
     "test": {
-      "formation": {
-          "test": {
-            "quantity": 1,
-            "size": "standard-1x"
-          }
-      }
-   }
-  },  
+      "quantity": 1,
+      "size": "standard-1x"
+    }
+  }, 
   "addons": ["heroku-postgresql"]
 }
