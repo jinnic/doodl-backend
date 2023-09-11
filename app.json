@@ -2,23 +2,21 @@
   "name": "Doodl-Api",
   "description": "backend for doodl",
   "repository": "https://github.com/jinnic/doodl-backend",
+  "stack": "heroku-20",
   "scripts": {
     "postdeploy": "bundle exec rake db:migrate"
+  },
+  "formation": {
+    "web": {
+      "quantity": 1,
+      "size": "standard-1x"
+    }
   },
   "env": {
     "RAILS_ENV": "production",
     "RACK_ENV": "production",
     "RAILS_SERVE_STATIC_FILES": "true"
   },
-  "environments": {
-    "test": {
-      "formation": {
-          "test": {
-            "quantity": 1,
-            "size": "standard-1x"
-          }
-      }
-   }
-  },  
   "addons": ["heroku-postgresql"]
 }
+
