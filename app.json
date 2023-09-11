@@ -1,8 +1,7 @@
 {
   "name": "Doodl-Api",
   "description": "backend for doodl",
-  "repository": "https://github.com/heroku/ruby-rails-sample",
-  "logo": "https://upload.wikimedia.org/wikipedia/commons/c/c3/Ruby_on_Rails_logo.svg",
+  "repository": "https://github.com/jinnic/doodl-backend",
   "scripts": {
     "postdeploy": "bundle exec rake db:migrate"
   },
