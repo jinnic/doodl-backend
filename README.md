@@ -25,7 +25,8 @@ Doodl allows a user to:
 
 
 ### Built With ###
-* [Frontend](https://github.com/aleksarad/doodl-frontend): React, Bootstrap, React Canvas Draw, Sass
+* [Frontend-React](https://github.com/aleksarad/doodl-frontend): React, Bootstrap, React Canvas Draw, Sass
+* [Frontend-Redux](https://github.com/jinnic/doodl-redux): React, Redux, Bootstrap, React Canvas Draw, Sass
 * [Backend](https://github.com/jinnic/doodleApp-backend): Ruby On Rails, PostgreSQL, JWT, Serializer
 
 ### Features ###
