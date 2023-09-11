@@ -105,9 +105,10 @@ GEM
     net-smtp (0.3.3)
       net-protocol
     nio4r (2.5.9)
-    nokogiri (1.13.10-x86_64-darwin)
+    nokogiri (1.15.4-x86_64-darwin)
       racc (~> 1.4)
     pg (1.5.4)
+    psych (3.3.4)
     puma (4.3.12)
       nio4r (~> 2.0)
     racc (1.7.1)
@@ -135,8 +136,9 @@ GEM
       activesupport (>= 5.0.0)
       minitest
       nokogiri (>= 1.6)
-    rails-html-sanitizer (1.5.0)
-      loofah (~> 2.19, >= 2.19.1)
+    rails-html-sanitizer (1.6.0)
+      loofah (~> 2.21)
+      nokogiri (~> 1.14)
     railties (6.0.6.1)
       actionpack (= 6.0.6.1)
       activesupport (= 6.0.6.1)
@@ -179,6 +181,7 @@ DEPENDENCIES
   jwt
   listen (~> 3.2)
   pg (>= 0.18, < 2.0)
+  psych (< 4)
   puma (~> 4.1)
   rack-cors
   rails (~> 6.0.3, >= 6.0.3.2)
@@ -187,7 +190,7 @@ DEPENDENCIES
   tzinfo-data
 
 RUBY VERSION
-   ruby 2.6.1p33
+   ruby 3.2.2p53
 
 BUNDLED WITH
-   2.4.19
+   2.4.10
