@@ -110,6 +110,7 @@ GEM
     nokogiri (1.15.4-x86_64-linux)
       racc (~> 1.4)
     pg (1.5.4)
+    psych (3.3.4)
     puma (4.3.12)
       nio4r (~> 2.0)
     racc (1.7.1)
@@ -172,7 +173,6 @@ GEM
     zeitwerk (2.6.11)
 
 PLATFORMS
-  x86_64-darwin-20
   x86_64-darwin-21
   x86_64-linux
 
@@ -184,6 +184,7 @@ DEPENDENCIES
   jwt
   listen (~> 3.2)
   pg (>= 0.18, < 2.0)
+  psych (< 4)
   puma (~> 4.1)
   rack-cors
   rails (~> 6.0.3, >= 6.0.3.2)
